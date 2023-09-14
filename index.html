@@ -1,0 +1,92 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Fluid grid */
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* Responsive navigation */
+    .topnav {
+      display: flex;
+      justify-content: space-between ;
+      align-items: center;
+      background-color: white;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 50px;
+
+    }
+
+    body {
+        background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+      }
+
+    /* Responsive images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Media queries */
+    @media screen and (max-width: 768px) {
+      /* Collapse navigation on mobile */
+      .topnav {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      /* Center navigation on mobile */
+      .topnav-brand {
+        text-align: center;
+      }
+    }
+
+    .topnav a {
+        margin: 0 40px;
+        text-align: center;
+      }
+
+    /* Icons */
+    .topnav .icons {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .topnav .phone-icon,
+    .topnav .shopping-cart-icon {
+      color: #d53369;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topnav">
+      <a class="active">Home</a>
+      <a>Order</a>
+      <a>Food</a>
+      <a>Testimonials</a>
+      <a>Contact Us</a>
+
+      <div class="icons">
+        <i class="fa fa-phone phone-icon"></i>
+        <i class="fa fa-shopping-cart shopping-cart-icon"></i>
+      </div>
+    </div>
+
+    <h2>LOREM IPSUM</h2>
+    <p>Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took
+      a galley of type and scrambled it to make a type
+      specimen book.</p>
+    <img src="img1.jpg"  style="width:100% ">
+  </div>
+</body>
+</html>
